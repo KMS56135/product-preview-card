@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../dist/output.css">
+  <title>Frontend Mentor | Product preview card component</title>
+
+
+</head>
+<body>
+  <main class="bg-cream min-h-screen grid justify-center content-center px-5">
+    <div class="bg-white max-w-[535px] rounded-2xl grid grid-cols-1 tablet:grid-cols-2">
+      <div>
+        <picture class="">
+          <source 
+            srcset="../../images/image-product-mobile.jpg"
+            media="(max-width: 375px)"
+          />
+          <img class="rounded-t-2xl tablet:rounded-l-2xl tablet:rounded-r-none min-h-full" src="../../images/image-product-desktop.jpg" alt="">
+        </picture>
+      </div>
+      <div class="p-5">
+        <p class="text-lg text-dark-grayish-blue font-light font-Montserrat tracking-widest uppercase mb-4">Perfume</p>
+        <h1 class="text-3xl text-very-dark-blue font-bold font-Fraunces mb-5">Gabrielle Essence Eau De Parfum</h1>
+        <p class="text-sm text-very-dark-blue font-Montserrat mb-5">
+          A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+          Perfumer-Creator for the House of CHANEL.</p>
+        <div>
+          <div class="mb-4 grid grid-cols-[120px_1fr] items-center">
+            <span class="text-3xl text-dark-cyan font-Fraunces">$149.99</span>
+            <span class="text-sm text-dark-grayish-blue font-Fraunces line-through">$169.99</span>
+          </div>
+          <button class="text-sm flex justify-center items-center text-white font-semibold w-full p-3 rounded-md cursor-pointer text-center bg-dark-cyan hover:bg-cyan">
+            <a class="relative block" href="#">
+              <i class="absolute top-[50%] translate-y-[-50%] left-[-20px] block">
+                <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z" fill="#FFF"/></svg>
+              </i>
+              <span class="">Add to Cart</span>
+            </a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+</body>
+</html>
